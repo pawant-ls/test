@@ -1,26 +1,39 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 :root {
+  --primary: #8300f2;
+  --secondary: #ff7652;
+
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #06070b;
+
+  --font-bdogrotesk: "BDOGrotesk";
 }
 
 @theme inline {
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Gradients */
+
+  /* Fonts */
+  --font-primary: var(--font-bdogrotesk);
+
+  
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-bdogrotesk);
+}
+
+@font-face {
+  font-family: "BDOGrotesk";
+  src: url("/fonts/BDOGrotesk-VF.ttf") format("truetype");
+  font-weight: 100 900; /* Supports all weights */
+  font-style: normal;
 }
