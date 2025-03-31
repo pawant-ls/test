@@ -9,12 +9,17 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "lint:fix": "next lint --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "type-check": "tsc -b"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "gsap": "^3.12.7",
+    "lenis": "^1.2.3",
     "next": "15.2.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tempus": "^1.0.0-dev.10"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
